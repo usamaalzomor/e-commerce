@@ -177,3 +177,11 @@ SIMPLE_JWT = {
     "REFRESH_TOKEN_LIFETIME": timedelta(days=10),
     'AUTH_HEADER_TYPES': ('JWT',),
 }
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 2525
+DEFAULT_FROM_EMAIL = 'from@usama.com'
+ADMINS = [
+    {'Usama', 'usama@info.com'}
+]
