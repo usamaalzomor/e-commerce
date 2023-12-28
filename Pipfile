@@ -19,6 +19,7 @@ redis = "*"
 celery = "*"
 flower = "*"
 whitenoise = "*"
+gunicorn = "*"
 
 [dev-packages]
 autopep8 = "*"
