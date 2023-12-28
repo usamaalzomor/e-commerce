@@ -1,7 +1,7 @@
 import os
 from celery import Celery
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ecommerce.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ecommerce.settings.dev')
 
 celery = Celery('ecommerce')
 celery.conf.broker_connection_retry_on_startup = True
