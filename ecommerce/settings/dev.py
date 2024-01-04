@@ -14,10 +14,21 @@ DATABASES = {
         'NAME': 'ecommerce3',  
         'USER': 'root',  
         'PASSWORD': 'Osa_05910120',  
-        'HOST': '127.0.0.1',  
+        'HOST': 'mysql',  
         'PORT': '3306',  
         'OPTIONS': {  
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
         }  
     }  
-}  
+}
+
+CELERY_BROKER_URL = 'redis://redis:6379/1'
+
+EMAIL_HOST ='smtp4dev'
+EMAIL_HOST_USER =''
+EMAIL_HOST_PASSWORD =''
+EMAIL_PORT = 2525
+
+DEBUG_TOOLBAR_CONFIG = {
+    'SHOW_TOOLBAR_CALLBACK': lambda request: True
+}
