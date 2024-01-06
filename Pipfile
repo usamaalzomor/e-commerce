@@ -20,6 +20,7 @@ celery = "*"
 flower = "*"
 whitenoise = "*"
 gunicorn = "*"
+dj-database-url = "*"
 
 [dev-packages]
 autopep8 = "*"

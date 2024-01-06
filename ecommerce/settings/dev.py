@@ -20,4 +20,15 @@ DATABASES = {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
         }  
     }  
-}  
+}
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 2525
+DEFAULT_FROM_EMAIL = 'from@usama.com'
+ADMINS = [
+    {'Usama', 'usama@info.com'}
+]
+
+CELERY_BROKER_URL = 'redis://localhost:6379/1'
