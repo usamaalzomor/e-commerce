@@ -21,6 +21,7 @@ flower = "*"
 whitenoise = "*"
 gunicorn = "*"
 dj-database-url = "*"
+drf-spectacular = {extras = ["sidecar"], version = "*"}
 
 [dev-packages]
 autopep8 = "*"
