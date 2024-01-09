@@ -20,7 +20,7 @@ from django.urls import path, include
 import debug_toolbar
 from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, SpectacularSwaggerView
 
-admin.site.site_header = 'Storefront Admin'
+admin.site.site_header = 'E-commerce Admin'
 admin.site.index_title = 'Admin'
 
 urlpatterns = [
